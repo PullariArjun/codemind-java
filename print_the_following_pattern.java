@@ -8,9 +8,9 @@ class arjun
         a=sc.nextInt();
         for(i=1;i<=a;i++)
         {
-            for(j=a;j>0;j--)
+            for(j=1;j<=i;j++)
             {
-                System.out.print(j+" ");
+                System.out.print(j);
             }
             System.out.print("
 ");
