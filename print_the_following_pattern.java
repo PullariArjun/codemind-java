@@ -1,4 +1,4 @@
-import java.util.Scanner;
+import java.util.*;
 class arjun
 {
     public static void main(String ram[])
@@ -10,15 +10,10 @@ class arjun
         {
             for(j=1;j<=n;j++)
             {
-                if(i==j||i==n-j+1)
-                {
-                    System.out.print("x");
-                }
+                if(i==j || i==n || j==1)
+                System.out.print("*");
                 else
-                {
-                    System.out.print("0");
-                }
-                
+                System.out.print(" ");
             }
             System.out.print("
 ");
