@@ -1,4 +1,4 @@
-import java.util.*;
+import java.util.Scanner;
 class arjun
 {
     public static void main(String ram[])
@@ -6,17 +6,17 @@ class arjun
         int n,i,j;
         Scanner sc=new Scanner(System.in);
         n=sc.nextInt();
-        for(i=1;i<=n;i++)
+        for(i=0;i<n;i++)
         {
-            for(j=1;j<=n;j++)
+            for(j=0;j<n;j++)
             {
-                if(i==j || i==n || j==1)
+                if(i==j||j==0||j==n-1)
                 System.out.print("*");
-                else
+                else 
+                System.out.print(" ");
                 System.out.print(" ");
             }
-            System.out.print("
-");
+            System.out.println();
         }
     }
 }
