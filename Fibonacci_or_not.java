@@ -3,13 +3,12 @@ class arjun
 {
     public static void fab(int n)
     {
-        int i=0,j=1,sum=0,x=0,flag=0;
+        int i=0,j=1,sum=0,flag=0;
         while(sum<n)
         {
             sum=i+j;
             i=j;
             j=sum;
-            x++;
             if(sum==n)
             {
                 flag=1;
