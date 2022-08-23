@@ -3,7 +3,7 @@ class arjun
 {
     public static void main(String ram[])
     {
-        int l,w,h,n,i,j;
+        int l,n,w,h,i,j;
         Scanner sc=new Scanner(System.in);
         l=sc.nextInt();
         n=sc.nextInt();
