@@ -14,13 +14,7 @@ class arjun
         }
         if(c==2)
         {
-            int temp=n;
-            int count1=0;
-            while(temp>0)
-            {
-                temp=temp/10;
-                count1++;
-            }
+            int count1=(int)Math.log10(n)+1;
             int count2=0;
             while(n>0)
             {
