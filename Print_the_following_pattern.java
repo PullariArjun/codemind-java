@@ -3,20 +3,19 @@ class arjun
 {
     public static void main(String ram[])
     {
-        int i,j,n,k=0;
-        Scanner sc=new Scanner (System.in);
+        int n,i,j;
+        Scanner sc=new Scanner(System.in);
         n=sc.nextInt();
-        for(i=1;i<=n;i++)
+        for(i=n;i>=1;i--)
         {
-            k++;
             for(j=1;j<=n;j++)
             {
-                if(k>j)
-                continue;
-                System.out.print(j);
+                if(i==j||j==(n-i)+1)
+                System.out.print(i);
                 System.out.print(" ");
             }
-            System.out.println();
+            System.out.print("
+");
         }
     }
 }
