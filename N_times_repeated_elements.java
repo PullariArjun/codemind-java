@@ -1,9 +1,9 @@
-import java.util.Scanner;
-class arjun
+import java.util.*;
+class Hello
 {
     public static void main(String ram[])
     {
-        int n,k,i,j,flag=0;
+        int n,i,k,j,f=0;
         Scanner sc=new Scanner(System.in);
         n=sc.nextInt();
         int arr[]=new int[n];
@@ -13,24 +13,25 @@ class arjun
         }
         k=sc.nextInt();
         for(i=0;i<n;i++)
-        {  if(arr[i]!=-1)
-          {
+        {
             int count=1;
+            if(arr[i]==-1)
+            continue;
             for(j=0;j<n;j++)
             {
-                if(arr[i]==arr[j] && i!=j)
+                if(arr[i]==arr[j]&&i!=j)
                 {
                     count++;
                     arr[j]=-1;
                 }
             }
             if(count==k)
-            {flag=1;
+            {
                 System.out.print(arr[i]+" ");
+                f++;
             }
-          }
         }
-        if(flag==0)
-          System.out.print("-1");
+        if(f==0)
+        System.out.print("-1");
     }
 }
