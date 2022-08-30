@@ -1,37 +1,34 @@
 import java.util.Scanner;
 class arjun
 {
+    public int prime(int n)
+    {
+        int i,count=0;
+        for(i=1;i<=n;i++)
+        {
+            if(n%i==0)
+            {
+                count++;
+            }
+        }
+        return count;
+    }
     public static void main(String ram[])
     {
-        int n,i,j;
+        int n,i,count=0,sum=0;
+        arjun ar=new arjun();
         Scanner sc=new Scanner(System.in);
         n=sc.nextInt();
         int arr[]=new int[n];
         for(i=0;i<n;i++)
         {
             arr[i]=sc.nextInt();
-        }
-        int sum=0,primes=0;
-        for(i=0;i<n;i++)
-        {int count=0;
-            if(arr[i]==1)
-            {
-                continue;
-            }
-            for(j=2;j<arr[i];j++)
-            {
-                if(arr[i]%j==0)
-                {
-                    count++;
-                }
-            }
-            if(count==0)
+            if(ar.prime(arr[i])==2)
             {
                 sum=sum+arr[i];
-                primes++;
+                count++;
             }
         }
-         double avg=(double)sum/primes;
-         System.out.printf("%.2f",avg);
+        System.out.format("%.2f",(float)sum/count);
     }
 }
