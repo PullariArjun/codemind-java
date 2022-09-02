@@ -1,4 +1,4 @@
-import java.util.Scanner;
+import java.util.*;
 class arjun
 {
     public static void main(String ram[])
@@ -11,13 +11,8 @@ class arjun
         for(i=0;i<n;i++)
         {
             arr[i]=sc.nextInt();
-        }
-        for(i=0;i<n;i++)
-        {
             if(arr[i]%k==0)
-            {
-                count++;
-            }
+            count++;
         }
         System.out.print(count);
     }
